@@ -33,6 +33,8 @@ filenames.each do |x|
 	filename_numbers<<x.gsub(prefix,'').gsub(suffix,'')
 end
 
-filename_numbers.sort.each do |x|
-	puts prefix+x+suffix
+sorted_filenames = filename_numbers.sort.map do |x|
+prefix+x+suffix
 end
+
+puts sorted_filenames
