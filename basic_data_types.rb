@@ -75,3 +75,39 @@ end
 return pfactors
 
 end
+
+##STRINGS
+
+#reverse
+assert_equal 'nocab yknuhc'.reverse, 'chunky bacon'
+
+
+#helloworld
+assert_equal 'HELLO WORLD', 'hello world'.upcase
+
+
+#there's no way this works
+@name = "Dave"
+str = "My mind is going #@name"
+
+assert_equal (str == "My mind is going Dave"), true
+
+
+#there's no way this works, vol 2
+str = "Hello" "World"
+
+assert_equal str, "HelloWorld"
+
+
+#bracketsandsearches
+
+assert_equal "hello world"["e"], "e"
+assert_equal "what"["e"],        nil
+assert_equal "rubeque"["e"],     "e"
+assert_equal "E"["e"],           nil
+
+#nolimit
+
+assert_equal ["1", "2", "3"], "1,2,3".split(',',-1)
+assert_equal ["", "", "1", "2", "3"], ",,1,2,3".split(',',-1)
+assert_equal ["1", "2", "3", "", ""], "1,2,3,,".split(',',-1)
