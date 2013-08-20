@@ -26,9 +26,9 @@ end
 
 assert_equal Bar.new.say_name, "bar"
 
+
+
 #Queue Continuum
-
-
 
 def initialize(queue)
     @arr = queue
@@ -47,9 +47,9 @@ def to_a
     @arr
 end
 
+
+
 #baby got stacks
-
-
 
 def initialize(stack)
     @stack = stack
